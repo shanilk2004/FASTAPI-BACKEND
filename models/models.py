@@ -9,3 +9,4 @@ class Students(Base):
     name = Column(String,nullable=False)
     department = Column(String,nullable=False)
     cgpa= Column(Float,nullable=False)
+    year = Column(Integer, nullable=False)
