@@ -13,7 +13,6 @@ def get_db():
     finally:
         db.close()
 
-# Pydantic Schema (Moved here)
 class Student(BaseModel):
     name: str = Field(min_length=1)
     department: str = Field(min_length=1)
